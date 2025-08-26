@@ -1,0 +1,38 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url('/assets/interior_design_background.jpg') center/cover no-repeat;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Bottom full-width highlight section */
+.highlight-bottom {
+  width: 100%;
+  background-color: var(--e-global-color-primary, #5c5e61);
+  color: #fff;
+  border-top: 2px solid #fff;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text and layout for mobile responsiveness */
+@media (max-width: 768px) {
+  .highlight-bottom h5 {
+    font-size: 1rem;
+  }
+  .highlight-bottom p {
+    font-size: 0.9rem;
+  }
+  .highlight-bottom img {
+    max-width: 48% !important; /* side-by-side on mobile too */
+  }
+}

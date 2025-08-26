@@ -1,0 +1,87 @@
+<div class="container my-4">
+  <div class="row align-items-stretch g-4">
+    
+    <!-- Left Side Image -->
+    <div class="col-md-5">
+      <div class="h-100">
+        <img src="/assets/contact-us.jpg" 
+             alt="Contact Us" 
+             class="img-fluid rounded-4 shadow contact-image w-100 h-100"
+             style="object-fit: cover;">
+      </div>
+    </div>
+
+    <!-- Right Side Contact Info + Form -->
+    <div class="col-md-7 d-flex">
+      <div class="card border-0 shadow-sm p-3 rounded-4 w-100 my-auto">
+        <h4 class="fw-bold text-primary mb-2">Contact Us</h4>
+        <p class="small mb-2">
+          <i class="bi bi-geo-alt-fill text-danger"></i> 
+          Shop No.- 403, 4th Floor, Sulakshana by Moriya Homes, Kathal More Road,<br>
+          Beside HP Petrol Pump, Ranchi, Jharkhand
+        </p>
+        <a href="mailto:info@classio.com" class="small mb-2">
+          <i class="bi bi-envelope-fill text-success"></i> 
+          <strong>Email:</strong> info&#64;classio.com
+        </a>
+        <p class="small mb-3">
+          <i class="bi bi-telephone-fill text-info"></i> 
+          <strong>Phone:</strong> +91 6299849694
+        </p>
+
+        <!-- Contact Form -->
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row g-2">
+          <div class="col-12">
+            <label for="contactName" class="form-label mb-1">Name *</label>
+            <input type="text" class="form-control form-control-sm rounded-pill" formControlName="contactName" id="contactName">
+            <div *ngIf="contactForm.get('contactName')?.errors?.['specialChars'] && contactForm.get('contactName')?.touched" 
+                 class="text-danger small mt-1">
+              No special characters allowed.
+            </div>
+          </div>
+        
+          <div class="col-12">
+            <label for="contactEmail" class="form-label mb-1">Email *</label>
+            <input type="email" class="form-control form-control-sm rounded-pill" formControlName="contactEmail" id="contactEmail">
+          </div>
+        
+          <div class="col-12">
+            <label for="contactPhone" class="form-label mb-1">Phone Number *</label>
+            <input type="text" class="form-control form-control-sm rounded-pill" formControlName="contactPhone" id="contactPhone">
+          </div>
+        
+          <div class="col-12 text-center mt-2">
+            <button type="submit" class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Map Section -->
+<!-- Map Section -->
+<div class="my-4">
+  <div class="position-relative rounded-4 overflow-hidden shadow" style="height: 400px;">
+    <iframe
+      width="100%"
+      height="100%"
+      frameborder="0"
+      style="border:0"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.227998673695!2d85.2501126!3d23.3630674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4dfa17982b61d%3A0x1b2a3fcb6f725998!2sClassio%20Interior%20%26%20Architecture!5e0!3m2!1sen!2sin!4v1722746012345!5m2!1sen!2sin"
+      allowfullscreen>
+    </iframe>
+
+    <!-- Overlay Label -->
+    <div class="position-absolute bottom-0 start-0 bg-white bg-opacity-75 p-2 rounded-top-end shadow-sm">
+      <small class="fw-bold text-dark">
+        📍 Classio Interior & Architecture - Ranchi
+      </small>
+    </div>
+  </div>
+</div>
+
+

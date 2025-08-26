@@ -1,0 +1,26 @@
+.footer h5 {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.footer a {
+  font-size: 0.95rem;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+.footer form input {
+  font-size: 0.9rem;
+}
+
+.footer form button {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  .footer h5 {
+    margin-top: 1rem;
+  }
+}
