@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
 youtubeUrl = 'https://www.youtube.com/embed/eb9drDRHEzs'; 
 teamMembers = [
-    { name: 'John Doe', role: 'Lead Architect', image: 'assets/team1.jpg' },
-    { name: 'Jane Smith', role: 'Interior Designer', image: 'assets/team2.jpg' },
-    { name: 'Alex Lee', role: 'Project Manager', image: 'assets/team3.jpg' },
-    { name: 'Sophia Davis', role: 'Creative Director', image: 'assets/team4.jpg' }
+    { name: 'Mr. Navin Rana', role: 'Lead Architect & Interior Designer', image: 'assets/navinrana.jpg' },
+    { name: 'Miss Priyanka', role: 'Interior Designer', image: 'assets/priyanka.jpg' },
+    { name: 'Mr. Srikant Rana', role: 'Project Manager', image: 'assets/pinturana.jpg' },
+    { name: 'Mr. Jitendra Rana', role: 'Contractor', image: 'assets/jiturana.jpg' }
   ];
 }
