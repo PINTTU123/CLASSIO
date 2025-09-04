@@ -9,12 +9,12 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'gallery', component: GalleryComponent },
     { path: 'about-us', component: AboutUsComponent },
-    { path: 'contact-us', component: ContactUsComponent },
+    { path: 'contact-us', component: ContactUsComponent},
     { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

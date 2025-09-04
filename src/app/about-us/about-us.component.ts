@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
 youtubeUrl = 'https://www.youtube.com/embed/eb9drDRHEzs'; 
 teamMembers = [
-    { name: 'Mr. Navin Rana', role: 'Lead Architect & Interior Designer', image: 'assets/navinrana.jpg' },
-    { name: 'Miss Priyanka', role: 'Interior Designer', image: 'assets/priyanka.jpg' },
+    { name: 'Mr. Navin Rana', role: 'Co-Founder, Lead Architect & Interior Designer', image: 'assets/navinrana.png' },
+    { name: 'Miss Priyanka', role: 'Co-Founder, Lead Architect & Interior Designer', image: 'assets/priyanka.jpg' },
     { name: 'Mr. Srikant Rana', role: 'Project Manager', image: 'assets/pinturana.jpg' },
     { name: 'Mr. Jitendra Rana', role: 'Contractor', image: 'assets/jiturana.jpg' }
   ];

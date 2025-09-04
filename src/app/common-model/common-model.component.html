@@ -1,0 +1,28 @@
+<div class="modal" [class.show]="isVisible">
+  <div class="modal-content">
+    <h3>{{ title }}</h3>
+
+    <form [formGroup]="modalForm" (ngSubmit)="submit()">
+      <div>
+        <label>Name</label>
+        <input formControlName="contactName" placeholder="Enter name" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" formControlName="contactEmail" placeholder="Enter email" />
+      </div>
+
+      <div>
+        <label>Mobile</label>
+        <input formControlName="contactPhone" placeholder="Enter mobile" />
+      </div>
+
+      <div style="text-align: right;">
+        <button type="submit" [disabled]="modalForm.invalid">Submit</button>
+        <button type="button" (click)="close()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+<app-popup #popup></app-popup>

@@ -16,7 +16,7 @@
 
     <!-- Buttons -->
     <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
-      <a href="#popup" class="btn btn-primary btn-lg px-4">Get Started</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn btn-primary btn-lg px-4">Get Started</a>
       <a routerLink="/contact-us" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
     </div>
   </div>
@@ -36,7 +36,7 @@
           Transform your home with designs that blend elegance, comfort, and functionality —
           crafted to match your lifestyle and personality.
         </p>
-        <a href="#contact" class="btn btn-dark btn-lg rounded-pill px-4 shadow-sm">
+        <a href="javascript:void(0)" (click)="openModal()" class="btn btn-dark btn-lg rounded-pill px-4 shadow-sm">
           Get Started
         </a>
       </div>
@@ -71,7 +71,7 @@
     life. From <strong>creative design</strong> to <strong>quality
     construction</strong>, we deliver excellence with passion and precision.
   </p>
-  <a href="https://krestliving.com/our-services/" class="btn-primary">View All Services →</a>
+  <a routerLink="/contact-us" class="btn-primary">View All Services →</a>
 </div>
 
   <div class="services-row">
@@ -83,7 +83,7 @@
         We specialize in creating beautiful and functional residential spaces
         that meet your unique needs and preferences.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
 
     <div class="service-card">
@@ -93,7 +93,7 @@
         We deliver innovative and efficient commercial spaces tailored to your
         business needs.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
 
     <div class="service-card">
@@ -103,7 +103,7 @@
         We deliver top-notch construction services using the best materials,
         ensuring durability and excellence.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
 
     <div class="service-card">
@@ -113,7 +113,7 @@
         We offer comprehensive civil construction services with robust
         infrastructure solutions.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
 
     <div class="service-card">
@@ -123,7 +123,7 @@
         We create efficient and visually appealing layouts with optimal space
         use.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
 
     <div class="service-card">
@@ -133,7 +133,8 @@
         Experience your future space with detailed 2D and 3D walkthroughs before
         construction begins.
       </p>
-      <a href="#" class="btn">Get Quote →</a>
+      <a href="javascript:void(0)" (click)="openModal()" class="btn">Get Quote →</a>
     </div>
   </div>
 </section>
+<app-common-model #modal title="Contact Information"></app-common-model>

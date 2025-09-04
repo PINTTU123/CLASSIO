@@ -9,9 +9,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SafeUrlPipe } from './safe-url.pipe';
+import { PopupComponent } from './shared/popup/popup.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CommonModelComponent } from './common-model/common-model.component';
 
 @NgModule({
   declarations: [
@@ -22,16 +25,20 @@ import { SafeUrlPipe } from './safe-url.pipe';
     GalleryComponent,
     HeaderComponent,
     FooterComponent,
-    SafeUrlPipe
+    SafeUrlPipe,
+    PopupComponent,
+    CommonModelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

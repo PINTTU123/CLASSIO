@@ -1,0 +1,29 @@
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.popup-success {
+  background-color: #28a745;
+}
+
+.popup-error {
+  background-color: #dc3545;
+}
+
+.popup-info {
+  background-color: #007bff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

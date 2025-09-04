@@ -1,0 +1,11 @@
+<div
+  class="popup"
+  *ngIf="isVisible"
+  [ngClass]="{
+    'popup-success': type === 'success',
+    'popup-error': type === 'error',
+    'popup-info': type === 'info'
+  }"
+>
+  {{ message }}
+</div>

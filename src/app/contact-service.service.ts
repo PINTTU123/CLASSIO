@@ -1,3 +1,4 @@
+import { ApiResponse } from './reponse/ApiResponse';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs'
@@ -6,11 +7,11 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class ContactServiceService {
-private apiUrl = 'http://localhost:9090/contactUs';
+private apiUrl = 'https://classiointerior.com/classio/api/v1/save/contactUs';
   
   constructor(private http: HttpClient) {}
 
   sendContactForm(payload: any): Observable<any> {
-    return this.http.post(this.apiUrl, payload);
+    return this.http.post<ApiResponse<any>>(this.apiUrl, payload);
   }
 }
