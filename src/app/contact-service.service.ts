@@ -7,7 +7,7 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class ContactServiceService {
-private apiUrl = 'https://classiointerior.com/classio/api/v1/save/contactUs';
+private apiUrl = 'https://classiointerior.com/arch/classio/api/v1/save/contactUs';
   
   constructor(private http: HttpClient) {}
 
