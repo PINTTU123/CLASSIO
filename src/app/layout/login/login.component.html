@@ -1,0 +1,48 @@
+<section class="video-section">
+
+  <video autoplay muted loop class="background-video">
+    <source src="/assets/interior-classio.mp4" type="video/mp4">
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <div class="login-container d-flex justify-content-center align-items-center">
+
+    <div class="login-card shadow p-4 rounded">
+
+      <!-- Logo -->
+      <div class="text-center mb-4">
+        <img src="assets/classio-logo-4.png" alt="Logo" width="100" height="80" class="mb-3">
+        <h2 class="fw-bold text-black">Welcome Back</h2>
+      </div>
+
+      <!-- Login Form -->
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+
+        <div class="mb-3">
+          <label for="username" class="form-label text-white">Username</label>
+          <input type="text" id="username" name="username" [(ngModel)]="username"
+                 class="form-control" placeholder="Enter your username" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label text-white">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password"
+                 class="form-control" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn login-btn w-100">
+          <i class="bi bi-box-arrow-in-right me-2"></i> Login
+        </button>
+
+      </form>
+
+      <!-- <p class="text-center mt-3 text-white">
+        Don't have an account? <a routerLink="/register" class="text-info">Register</a>
+      </p> -->
+
+    </div>
+
+  </div>
+
+</section>

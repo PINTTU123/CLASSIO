@@ -1,0 +1,54 @@
+/* Custom nav link hover effect */
+.custom-nav-link {
+  position: relative;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-nav-link:hover {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-bottom: 0.25rem; /* Reduced spacing */
+  }
+
+  .custom-nav-link {
+    padding: 0.5rem 0; /* Slightly smaller vertical padding */
+    display: inline-block;
+  }
+
+  .btn {
+    width: auto;
+  }
+}

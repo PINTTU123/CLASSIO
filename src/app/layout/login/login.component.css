@@ -1,0 +1,111 @@
+/* Video Section Full Screen */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* Centered Login Form */
+.login-container {
+  position: relative;
+  z-index: 3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Input Fields */
+.form-label {
+  color: #333 !important;  /* Dark label text */
+  font-weight: 500;
+}
+
+.form-control {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #ced4da;
+}
+
+.form-control::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+/* Stylish Gradient Login Button */
+.login-btn {
+  background: linear-gradient(135deg, #4a90e2, #007bff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  transform: translateY(-2px);
+}
+
+/* Footer Link Styling */
+.login-card p {
+  color: #333;
+}
+
+.login-card a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 1rem;
+  }
+
+  .form-control {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .login-btn {
+    font-size: 1rem;
+    padding: 0.65rem;
+  }
+}

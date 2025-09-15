@@ -15,7 +15,11 @@ import { SafeUrlPipe } from './safe-url.pipe';
 import { PopupComponent } from './shared/popup/popup.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CommonModelComponent } from './common-model/common-model.component';
-
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { LoginComponent } from './layout/login/login.component';
+import { WorksComponent } from './works/works.component';
+import { JobCategoryPipe } from './job-category.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,12 @@ import { CommonModelComponent } from './common-model/common-model.component';
     FooterComponent,
     SafeUrlPipe,
     PopupComponent,
-    CommonModelComponent
+    CommonModelComponent,
+    SidebarComponent,
+    DashboardComponent,
+    LoginComponent,
+    WorksComponent,
+    JobCategoryPipe
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+}
+
+.sidebar-link {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: block;
+  border-radius: 0.375rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+}
