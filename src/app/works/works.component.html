@@ -1,7 +1,7 @@
 <div class="works-page">
 
   <div class="background-container">
-    <img src="assets/interior-classio.jpg" alt="Background" class="background-image">
+    <img src="assets/about-interior.jpg" alt="Background" class="background-image">
     <div class="overlay"></div>
   </div>
 
@@ -18,7 +18,7 @@
     <div *ngFor="let job of jobs | jobCategory:selectedFilter" class="job-post mb-4">
       <!-- Header -->
       <div class="post-header d-flex align-items-center mb-3">
-        <img src="assets/avatar.png" alt="Client Avatar" class="avatar me-3" />
+        <img src="assets/about-interior.jpg" alt="Client Avatar" class="avatar me-3" />
         <div>
           <h6 class="mb-1">{{ job.clientName }}</h6>
           <small>{{ job.postedDate | date:'short' }} • {{ job.location }}</small>
